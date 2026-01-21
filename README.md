@@ -5,4 +5,4 @@
 
 ## Peer Review
 
-- TODO
+- Nicolas Gonzaba- Code and hosting all worked fine. No notes.
