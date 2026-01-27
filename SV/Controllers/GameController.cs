@@ -13,7 +13,13 @@ namespace SV.Controllers
     {
         private readonly GameService _svc = svc;
 
-        [HttpGet("Bot/{PlayerOne}")]
+        [HttpGet("RandomChoice")]
+        public ActionResult<string> CPU()
+        {
+            return _svc.RandomChoice();
+        }
+
+        [HttpGet("Play/{PlayerOne}")]
         public ActionResult<string> Bot(
             [FromRoute(Name = "PlayerOne")]
             string one
@@ -28,7 +34,7 @@ namespace SV.Controllers
             return str;
         }
 
-        [HttpGet("Duo/{PlayerOne}/{PlayerTwo}")]
+        [HttpGet("Play/{PlayerOne}/{PlayerTwo}")]
         public ActionResult<string> Duo(
             [FromRoute(Name = "PlayerOne")]
             string one,
