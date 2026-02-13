@@ -1,0 +1,123 @@
+
+/* MISC ========================================================================================= */
+
+:root {
+  --bg-r: #800000;
+  --bg-g: #008000;
+  --bg-b: #000080;
+  --bg-c: #008080;
+  --bg-m: #800080;
+  --bg-y: #808000;
+  --bg-k: #000000;
+  --bg-w: #ffffff;
+}
+
+/* body {
+  background: var(--bg-w);
+  min-width: 100vw;
+  min-height: 100vh;
+} */
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+section.grid { display: none; }
+section.grid.active { display: grid; }
+
+/* GRID ========================================================================================= */
+
+.grid { width: stretch; height: stretch; display: grid; }
+
+.grid-title {
+  min-width: 100vw;
+  min-height: 100vh;
+  grid:
+    "A0" 1fr
+    "A1" 1fr
+    / 1fr;
+}
+
+.grid-title-btns {
+  grid:
+    "A0" 1fr
+    "A1" 1fr
+    / 1fr;
+}
+
+.grid-rules {
+  min-width: 100vw;
+  min-height: 100vh;
+  grid:
+    "A0" auto
+    "A1" 1fr
+    "A2" 1fr
+    / 1fr;
+}
+
+.grid-setup {
+  min-width: 100vw;
+  min-height: 100vh;
+  grid:
+    "A0" auto
+    "A1" 1fr
+    "A2" 1fr
+    "A3" 1fr
+    "A4" 1fr
+    "A5" 1fr
+    "A6" auto
+    / 1fr;
+}
+
+.grid-setup-btns {
+  grid:
+    "A0 A1 A2 A3 A4" 1fr
+    / 1fr 1fr 1fr 1fr 1fr;}
+
+.grid-hands {
+  min-width: 100vw;
+  min-height: 100vh;
+  grid:
+    "A0" auto
+    "A1" 1fr
+    "A2" 1fr
+    "A3" auto
+    / 1fr;
+}
+
+.grid-hands-btns {
+  grid:
+    "A0 A1 A2 A3 A4" 1fr
+    / 1fr 1fr 1fr 1fr 1fr;}
+
+.grid-score {
+  min-width: 100vw;
+  min-height: 100vh;
+  grid:
+    "A0" auto
+    "A1" 1fr
+    "A2" 1fr
+    "A3" 1fr
+    "A4" 1fr
+    "A5" auto
+    / 1fr;
+}
+
+/* AREA ========================================================================================= */
+
+.area { width: stretch; height: stretch; display: block; }
+
+.area-0 { grid-area: A0; }
+.area-1 { grid-area: A1; }
+.area-2 { grid-area: A2; }
+.area-3 { grid-area: A3; }
+.area-4 { grid-area: A4; }
+.area-5 { grid-area: A5; }
+.area-6 { grid-area: A6; }
+.area-7 { grid-area: A7; }
+.area-8 { grid-area: A8; }
+.area-9 { grid-area: A9; }
+
+/* CELL ========================================================================================= */
+
+.cell { width: stretch; height: stretch; display: block; }
